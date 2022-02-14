@@ -7,12 +7,19 @@ const getState = ({ getStore, getActions, setStore }) => {
 		},
 		actions: {
 			getAllPeople:() => {
-				const setAllPoeple = getStore()
+				const store = getStore()
 				.then(response => { response.json()})
-				.then(json => {setStore ({people:json.result})})
-				.catch((error  => {
-					console.log(error);
-				})),
+				.then(data => {setStore ({people:data.result})})
+			},
+			getAllPlanets:() => {
+				const store = getStore()
+				.then(response => { response.json()})
+				.then(data => {setStore ({planets:data.result})})
+			},
+			getAllVehicles:() => {
+				const store = getStore()
+				.then(response => { response.json()})
+				.then(data => {setStore ({vehicles:data.result})})
 			}
 		}
 	}
