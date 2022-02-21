@@ -1,20 +1,18 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			People: [],
-			Planets: [],
-			Vehicles: []
+			people: [],
+			planets: [],
+			vehicles: []
 		},
 		actions: {
-			getAllPeople:() => {
+			setPeople:(peoples) => {
 				const store = getStore()
-				.then(response => { response.json()})
-				.then(data => {setStore ({people:data.result})})
+				setStore({...store, people:peoples})
 			},
-			getAllPlanets:() => {
+			setPlanets:(planets) => {
 				const store = getStore()
-				.then(response => { response.json()})
-				.then(data => {setStore ({planets:data.result})})
+				setStore({...store, planets:planets})
 			},
 			getAllVehicles:() => {
 				const store = getStore()
