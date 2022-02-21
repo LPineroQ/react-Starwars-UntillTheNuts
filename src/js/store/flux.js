@@ -10,14 +10,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const store = getStore()
 				setStore({...store, people:peoples})
 			},
-			setPlanets:(planets) => {
+			setPlanet:(planets) => {
 				const store = getStore()
 				setStore({...store, planets:planets})
 			},
-			getAllVehicles:() => {
+			setVehicle:(vehicles) => {
 				const store = getStore()
-				.then(response => { response.json()})
-				.then(data => {setStore ({vehicles:data.result})})
+				setStore({...store, vehicles:vehicles})
 			}
 		}
 	}

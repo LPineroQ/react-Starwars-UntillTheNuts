@@ -1,0 +1,12 @@
+body {
+    background-color: #222d2d;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/13390736/thumb/5.jpg");
+    background-repeat:repeat-x;
+    background-repeat:inherit;
+    background-position: 0 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: yellow;
+  }
+.row-1{
+  display: flex;
+}

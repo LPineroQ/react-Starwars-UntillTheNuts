@@ -25,9 +25,6 @@ const Layout = () => {
 						<Route exact path="/">
 							<Home />
 						</Route>
-						<Route exact path="/demo">
-							<Demo />
-						</Route>
 						<Route exact path="/detail/:type/:id">
 							<Single />
 						</Route>

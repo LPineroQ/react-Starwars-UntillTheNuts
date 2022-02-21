@@ -1,0 +1,20 @@
+.navbar {
+    background-color: #222d2d;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/13390736/thumb/5.jpg");
+    background-repeat:repeat-y;
+    background-position: 0 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: yellow;
+  }
+  h1{
+      color:yellow;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .ml-auto{
+    background-color: #222d2d;
+    background-image: url("https://ak.picdn.net/shutterstock/videos/13390736/thumb/5.jpg");
+    background-repeat:repeat-y;
+    background-position: 0 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: yellow;
+  }
