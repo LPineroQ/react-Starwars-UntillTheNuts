@@ -3,7 +3,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 		store: {
 			people: [],
 			planets: [],
-			vehicles: []
+			vehicles: [],
+			favorites: [],
 		},
 		actions: {
 			setPeople:(peoples) => {
@@ -17,6 +18,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 			setVehicle:(vehicles) => {
 				const store = getStore()
 				setStore({...store, vehicles:vehicles})
+			},
+			addFavorites:(name)=>{
+				const store = getStore()
+				const newFavorites = [...store.favorites,name]
+				setStore({...store, favorites:newFavorites})
 			}
 		}
 	}
