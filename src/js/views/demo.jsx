@@ -4,9 +4,8 @@ import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 
 import "../../styles/demo.css";
-import { propTypes } from "react-bootstrap/esm/Image";
 
-export const Favorites = () => {
+export const Demo = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
@@ -18,7 +17,7 @@ export const Favorites = () => {
 							key={name, id}
 							className="list-group-item d-flex justify-content-between"
 							>
-						{props.name},{props.id}
+						{name},{id}
 						</li>
 					);
 				})}

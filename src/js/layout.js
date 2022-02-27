@@ -28,6 +28,9 @@ const Layout = () => {
 						<Route exact path="/detail/:type/:id">
 							<Single />
 						</Route>
+						<Route exact path="/demo">
+							<Demo />
+						</Route>
 						<Route>
 							<h1>Not found!</h1>
 						</Route>
