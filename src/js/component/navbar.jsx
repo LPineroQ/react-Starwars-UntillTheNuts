@@ -15,7 +15,17 @@ export const Navbar = () => {
 			</Link>
 			<div className="ml-auto">
 				<Link to="/demo">
-					<button className="btn btn-primary">Favoritos {store.favorites.length}</button>
+					<button className="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Favoritos {store.favorites.length}</button>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+								{store.favorites.map((name, id) => {
+									return (
+										<li
+										key={name, id}
+										className="list-group-item d-flex justify-content-between"
+										>
+										{name},{id}
+										</li>)})}
+						</ul>
 				</Link>
 			</div>
 		</nav>
